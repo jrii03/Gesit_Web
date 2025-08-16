@@ -4,15 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GesitWeb - Landing Page Profesional untuk UMKM</title>
-    <meta name="description" content="Jasa pembuatan landing page profesional, cepat, dan terjangkau untuk UMKM dan bisnis kecil di Indonesia.">
+
+    <!-- Meta Tags Dasar -->
+    <meta name="description" content="Layanan landing page profesional untuk UMKM & freelancer Indonesia. Website online dalam 48 jam, harga terjangkau mulai Rp 500.000.">
+    <meta name="keywords" content="landing page, website UMKM, jasa website, landing page murah, UMKM Indonesia, freelancer website">
+    <meta name="author" content="GesitWeb">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:title" content="GesitWeb - Landing Page Profesional untuk UMKM & Freelancer">
+    <meta property="og:description" content="Website online dalam 48 jam dengan harga terjangkau. Solusi landing page profesional untuk bisnis Anda.">
+    <meta property="og:image" content="https://gesitweb.com/images/og-image.jpg">
+    <meta property="og:url" content="https://gesitweb.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GesitWeb">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GesitWeb - Landing Page Profesional">
+    <meta name="twitter:description" content="Website online dalam 48 jam dengan harga terjangkau untuk UMKM Indonesia.">
+    <meta name="twitter:image" content="https://gesitweb.com/images/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gesitweb.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
+    <!-- Preconnect untuk resource penting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload untuk resource penting -->
+    <link rel="preload" as="style" href="./dist/output.css">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
     <!-- Tailwind CSS Build -->
     <link rel="stylesheet" href="./dist/output.css">
 
     <!-- Google Fonts - Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics (gtag) - Replace GA_MEASUREMENT_ID with your actual ID -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
 </head>
 <body class="bg-white text-dark-gray">
     <!-- Navbar Section -->
@@ -63,8 +107,10 @@
 </header>
     
     <main>
+        <div id="hero"></div>
      <!-- Hero Section -->
-<section class="relative py-20 md:py-32 overflow-hidden" id="hero">
+<!-- Hero Section -->
+<section class="relative py-20 md:py-32 overflow-hidden">
     <!-- Background decoration elements -->
     <div class="absolute inset-0 bg-light-bg"></div>
     <div class="absolute top-20 right-0 w-64 h-64 bg-primary opacity-5 rounded-full blur-3xl"></div>
@@ -81,13 +127,11 @@
                     </div>
                     
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-dark-gray mb-6">
-                        Website Profesional, 
-                        <span class="text-primary">Jadi dalam 48 Jam.</span>
+                        Website Profesional dalam <span class="text-primary">48 Jam</span>
                     </h1>
                     
                     <p class="text-xl text-dark-gray font-normal leading-relaxed mb-8 max-w-2xl">
-                        Solusi landing page modern untuk UMKM dan freelancer yang butuh tampil kredibel di digital 
-                        <span class="font-medium">tanpa ribet dan tanpa mahal.</span>
+                        Landing page murah untuk UMKM & freelancer. Cepat, profesional, terjangkau.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
@@ -98,36 +142,21 @@
                             Lihat Portofolio
                         </a>
                     </div>
-                    
-                    <!-- Trust indicators -->
-                    <div class="flex items-center space-x-6">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <span class="ml-2 text-dark-gray font-medium">4.9/5 Rating</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="text-dark-gray font-medium">100+ Proyek</span>
-                        </div>
-                    </div>
                 </div>
                 
                 <!-- Visual Element -->
                 <div class="relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                         <div class="bg-gradient-to-br from-primary to-primary-dark aspect-video flex items-center justify-center">
-                            <div class="text-center p-8">
-                                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 inline-block">
-                                    <div class="text-white">
-                                        <div class="flex items-center justify-center mb-4">
-                                            <div class="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></div>
-                                            <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-                                        </div>
-                                        <div class="text-2xl font-bold mb-2">GesitWeb</div>
-                                        <div class="text-sm opacity-80">Landing Page Modern</div>
+                            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 inline-block">
+                                <div class="text-white">
+                                    <div class="flex items-center justify-center mb-4">
+                                        <div class="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
+                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></div>
+                                        <div class="w-3 h-3 bg-green-400 rounded-full"></div>
                                     </div>
+                                    <div class="text-2xl font-bold mb-2">GesitWeb</div>
+                                    <div class="text-sm opacity-80">Landing Page Modern</div>
                                 </div>
                             </div>
                         </div>
@@ -173,9 +202,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-dark-gray mb-3">Proses Gesit</h3>
+                <h3 class="text-2xl font-bold text-dark-gray mb-3">Proses Cepat</h3>
                 <p class="text-gray-600 font-normal leading-relaxed">
-                    Website Anda siap online hanya dalam 1-2 hari kerja.
+                    Website Anda siap online hanya dalam 1-2 hari kerja. Solusi jasa website UMKM yang cepat dan efisien.
                 </p>
             </div>
 
@@ -213,7 +242,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-dark-gray mb-4">
-                Proses Kerja yang Gesit
+                Proses Pembuatan Website Cepat
             </h2>
             <p class="text-xl text-gray-600 font-normal">
                 Kami buat prosesnya sederhana agar hasilnya maksimal
@@ -232,9 +261,9 @@
                     </div>
                     <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-secondary border-opacity-50 h-full">
                         <h3 class="text-2xl font-bold text-dark-gray mb-4">Briefing Cepat</h3>
-                        <p class="text-gray-600 font-normal leading-relaxed">
-                            Isi form singkat, kami akan pahami semua kebutuhan Anda.
-                        </p>
+                    <p class="text-gray-600 font-normal leading-relaxed">
+                        Isi form singkat, kami akan pahami semua kebutuhan jasa landing page Anda.
+                    </p>
                     </div>
                 </div>
 
@@ -244,10 +273,10 @@
                         02
                     </div>
                     <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-secondary border-opacity-50 h-full">
-                        <h3 class="text-2xl font-bold text-dark-gray mb-4">Desain & Development</h3>
-                        <p class="text-gray-600 font-normal leading-relaxed">
-                            Kami wujudkan brief Anda menjadi desain dan kode berkualitas.
-                        </p>
+                        <h3 class="text-2xl font-bold text-dark-gray mb-4">Desain & Development Profesional</h3>
+                    <p class="text-gray-600 font-normal leading-relaxed">
+                        Kami wujudkan brief Anda menjadi desain dan kode berkualitas tinggi.
+                    </p>
                     </div>
                 </div>
 
@@ -258,9 +287,9 @@
                     </div>
                     <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-secondary border-opacity-50 h-full">
                         <h3 class="text-2xl font-bold text-dark-gray mb-4">Revisi & Peluncuran</h3>
-                        <p class="text-gray-600 font-normal leading-relaxed">
-                            Satu kali revisi minor untuk memastikan semuanya sempurna sebelum website Anda live.
-                        </p>
+                    <p class="text-gray-600 font-normal leading-relaxed">
+                        Satu kali revisi minor untuk memastikan website online cepat dan sempurna.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -283,10 +312,10 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-dark-gray mb-4">
-                Hasil Kerja Kami
+                Portofolio Landing Page Profesional
             </h2>
             <p class="text-xl text-gray-600 font-normal">
-                Landing page yang kami buat membantu bisnis tumbuh dan terlihat profesional
+                Contoh landing page murah Indonesia yang kami buat untuk membantu UMKM tumbuh secara digital
             </p>
         </div>
 
@@ -295,18 +324,23 @@
             <div class="group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 bg-white border border-secondary border-opacity-30">
                  <div class="aspect-video bg-gradient-to-br from-primary to-primary-dark opacity-90 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                      <div class="text-center text-white">
-                        <img src="assets/images/kopi-senja.jpg" alt="Kopi Senja Website" class="max-h-full max-w-full object-contain">
+                        <img src="assets/images/kopi-kita.jpg"
+                             alt="Landing page Kopi Kita - Menu digital dan sistem pemesanan untuk kedai kopi lokal"
+                             class="max-h-full max-w-full object-contain"
+                             width="640"
+                             height="360"
+                             loading="lazy">
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="inline-block px-3 py-1 bg-primary bg-opacity-10 text-primary text-xs font-semibold rounded-full mb-3">
-                            UMKM F&B
+                            Studi Kasus - UMKM F&B
                         </div>
                         <h3 class="text-xl font-bold text-dark-gray mb-2">Kopi Kita</h3>
-                        <p class="text-gray-600 text-sm mb-4">Landing page fiktif untuk kedai kopi lokal dengan menu digital dan sistem pemesanan yang terintegrasi dengan whatsapp</p>
-                        <a href="https://kopisenja-demo.gesitweb.com" target="_blank" 
+                        <p class="text-gray-600 text-sm mb-4">Landing page untuk kedai kopi lokal dengan menu digital dan sistem pemesanan WhatsApp</p>
+                        <a href="https://kopikit.netlify.app/" target="_blank" 
                         class="inline-flex items-center text-primary hover:text-primary-dark font-semibold text-sm transition-colors duration-300">
-                            <span>Lihat Website</span>
+                            <span>Lihat Demo</span>
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                             </svg>
@@ -318,18 +352,23 @@
             <div class="group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 bg-white border border-secondary border-opacity-30">
                 <div class="aspect-video bg-gradient-to-br from-primary to-primary-dark opacity-90 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                     <div class="text-center text-white">
-                       <img src="assets/images/cantika.jpg" alt="Kopi Senja Website" class="max-h-full max-w-full object-contain">
+                       <img src="assets/images/laundry.jpg"
+                            alt="Landing page Noda Bersih Laundry - Landing page untuk jasa laundry dengan sistem booking online via whatsapp"
+                            class="max-h-full max-w-full object-contain"
+                            width="640"
+                            height="360"
+                            loading="lazy">
                        </div>
                    </div>
                    <div class="p-6">
                        <div class="inline-block px-3 py-1 bg-primary bg-opacity-10 text-primary text-xs font-semibold rounded-full mb-3">
-                           Personal identity
+                        Studi Kasus - Jasa Laundry
                        </div>
-                       <h3 class="text-xl font-bold text-dark-gray mb-2">Cantika</h3>
-                       <p class="text-gray-600 text-sm mb-4">Landing page personal identity untuk berbagi cerita</p>
-                       <a href="https://cantikaxyz.netlify.app" target="_blank" 
+                       <h3 class="text-xl font-bold text-dark-gray mb-2">Noda Bersih Laundry</h3>
+                       <p class="text-gray-600 text-sm mb-4">Landing page untuk jasa laundry dengan sistem booking online via whatsapp</p>
+                       <a href="https://nodalaundry.netlify.app/" target="_blank" 
                        class="inline-flex items-center text-primary hover:text-primary-dark font-semibold text-sm transition-colors duration-300">
-                           <span>Lihat Website</span>
+                           <span>Lihat Demo</span>
                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                            </svg>
@@ -386,10 +425,10 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-dark-gray mb-4">
-                Investasi yang Terjangkau
+                Harga Jasa Landing Page Terjangkau
             </h2>
             <p class="text-xl text-gray-600 font-normal">
-                Kualitas profesional dengan harga yang ramah untuk UMKM dan freelancer
+                Kualitas profesional dengan harga landing page murah Indonesia untuk UMKM dan freelancer
             </p>
         </div>
 
@@ -403,8 +442,8 @@
                     </div>
                     
                     <!-- Judul Paket -->
-                    <h3 class="text-3xl font-bold text-dark-gray mb-2">Paket Gesit</h3>
-                    <p class="text-gray-600 mb-8">Solusi lengkap untuk kehadiran digital Anda</p>
+                    <h3 class="text-3xl font-bold text-dark-gray mb-2">Paket Landing Page Profesional</h3>
+                    <p class="text-gray-600 mb-8">Solusi lengkap jasa landing page terjangkau untuk kehadiran digital Anda</p>
                     
                     <!-- Harga -->
                     <div class="mb-8">
@@ -492,7 +531,7 @@
             <!-- FAQ 1 -->
             <div class="faq-item group bg-light-bg rounded-2xl border border-secondary border-opacity-50 overflow-hidden transition-all duration-300 hover:shadow-md">
                 <div class="faq-header cursor-pointer p-6 flex items-center justify-between">
-                    <h3 class="text-lg md:text-xl font-semibold text-dark-gray">Berapa lama proses pengerjaannya?</h3>
+                    <h3 class="text-lg md:text-xl font-semibold text-dark-gray">Berapa lama proses jasa landing page terjangkau?</h3>
                     <div class="ml-4 flex-shrink-0">
                         <svg class="w-6 h-6 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -501,7 +540,7 @@
                 </div>
                 <div class="faq-content hidden px-6 pb-6">
                     <p class="text-gray-600 leading-relaxed">
-                        Proses pengerjaan hanya memakan waktu 1-2 hari kerja setelah briefing selesai. Kami fokus pada kecepatan tanpa mengorbankan kualitas.
+                        Proses pembuatan website online cepat hanya 1-2 hari kerja setelah briefing selesai. Kami fokus pada kecepatan tanpa mengorbankan kualitas profesional.
                     </p>
                 </div>
             </div>
@@ -509,7 +548,7 @@
             <!-- FAQ 2 -->
             <div class="faq-item group bg-light-bg rounded-2xl border border-secondary border-opacity-50 overflow-hidden transition-all duration-300 hover:shadow-md">
                 <div class="faq-header cursor-pointer p-6 flex items-center justify-between">
-                    <h3 class="text-lg md:text-xl font-semibold text-dark-gray">Apakah saya bisa meminta revisi?</h3>
+                    <h3 class="text-lg md:text-xl font-semibold text-dark-gray">Apakah saya bisa minta revisi landing page?</h3>
                     <div class="ml-4 flex-shrink-0">
                         <svg class="w-6 h-6 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -518,7 +557,7 @@
                 </div>
                 <div class="faq-content hidden px-6 pb-6">
                     <p class="text-gray-600 leading-relaxed">
-                        Ya, Anda berhak atas 2 kali revisi minor untuk memastikan hasil akhir sesuai dengan harapan Anda sebelum website live.
+                        Ya, Anda berhak atas 1 kali revisi minor untuk memastikan hasil akhir sesuai dengan harapan Anda sebelum website live.
                     </p>
                 </div>
             </div>
@@ -526,7 +565,7 @@
             <!-- FAQ 3 -->
             <div class="faq-item group bg-light-bg rounded-2xl border border-secondary border-opacity-50 overflow-hidden transition-all duration-300 hover:shadow-md">
                 <div class="faq-header cursor-pointer p-6 flex items-center justify-between">
-                    <h3 class="text-lg md:text-xl font-semibold text-dark-gray">Apa saja yang perlu saya siapkan?</h3>
+                    <h3 class="text-lg md:text-xl font-semibold text-dark-gray">Apa saja yang perlu saya siapkan untuk jasa website UMKM?</h3>
                     <div class="ml-4 flex-shrink-0">
                         <svg class="w-6 h-6 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -535,7 +574,7 @@
                 </div>
                 <div class="faq-content hidden px-6 pb-6">
                     <p class="text-gray-600 leading-relaxed">
-                        Cukup isi form briefing singkat yang kami sediakan. Kami akan memandu Anda untuk menyediakan logo, foto produk/jasa, dan informasi bisnis Anda.
+                        Cukup isi form briefing singkat. Kami akan memandu Anda menyediakan logo, foto produk/jasa, dan informasi bisnis untuk landing page profesional.
                     </p>
                 </div>
             </div>
@@ -564,11 +603,11 @@
     
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
-                Siap Punya Website Profesional Pertama Anda?
-            </h2>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
+                Siap Punya Landing Page Profesional?
+            </h3>
             <p class="text-xl text-white text-opacity-90 font-normal mb-10 max-w-2xl mx-auto">
-                Mulai perjalanan digital Anda dalam 48 jam. Cepat, mudah, dan terjangkau.
+                Mulai perjalanan digital Anda dalam 48 jam dengan jasa landing page murah Indonesia.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20memulai%20proyek%20landing%20page%20dengan%20GesitWeb.%20Mohon%20bantuan%20untuk%20memulai%20prosesnya.
@@ -594,7 +633,7 @@
             <div class="md:col-span-1">
                 <div class="text-2xl font-bold mb-4">GesitWeb</div>
                 <p class="text-gray-300 font-normal leading-relaxed mb-6 max-w-md">
-                    Layanan pembuatan landing page profesional yang cepat, mudah, dan terjangkau untuk UMKM dan freelancer Indonesia.
+                    Jasa landing page profesional yang cepat, mudah, dan terjangkau untuk UMKM dan freelancer Indonesia. Solusi website online dalam 48 jam.
                 </p>
                 <div class="flex space-x-4">
                     <a href="https://instagram.com/gesitweb.id" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
@@ -673,21 +712,35 @@
                 </div>
                 <div class="mt-2 max-h-96 overflow-y-auto pr-2">
                     <div class="text-gray-600 text-sm leading-relaxed">
-                        <p>
-                            Di GesitWeb, kami menghargai privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi yang Anda berikan kepada kami saat menggunakan layanan kami.
+                        <div class="text-gray-600 text-sm leading-relaxed">
+                            <p class="mb-4">
+                                Di GesitWeb, kami menghargai privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi yang Anda berikan kepada kami saat menggunakan layanan jasa landing page kami.
                             </p>
-                            <p>
-                            <strong>Informasi yang Kami Kumpulkan:</strong> Kami mengumpulkan informasi yang Anda berikan secara langsung melalui formulir briefing proyek, seperti nama, alamat email, dan nomor WhatsApp. Informasi ini kami kumpulkan semata-mata untuk tujuan memahami kebutuhan proyek Anda dan untuk berkomunikasi dengan Anda selama proses pengerjaan.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">Informasi yang Kami Kumpulkan</p>
+                            <p class="mb-4">
+                                Kami mengumpulkan informasi yang Anda berikan secara langsung melalui formulir briefing proyek, seperti nama, alamat email, dan nomor WhatsApp. Informasi ini kami kumpulkan semata-mata untuk tujuan memahami kebutuhan proyek landing page Anda dan untuk berkomunikasi dengan Anda selama proses pengerjaan.
                             </p>
-                            <p>
-                            <strong>Penggunaan Informasi:</strong> Informasi pribadi Anda hanya akan digunakan untuk keperluan internal yang berkaitan dengan proyek Anda, termasuk komunikasi, pengiriman draf, proses administrasi seperti penagihan, dan untuk informasi yang akan digunakan untuk landing page. Kami berkomitmen untuk **tidak akan pernah** menjual, menyewakan, atau membagikan informasi pribadi Anda kepada pihak ketiga mana pun tanpa persetujuan eksplisit dari Anda.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">Penggunaan Informasi</p>
+                            <p class="mb-4">
+                                Informasi pribadi Anda hanya akan digunakan untuk keperluan internal yang berkaitan dengan proyek Anda, termasuk komunikasi, pengiriman draf, proses administrasi seperti penagihan, dan untuk informasi yang akan digunakan untuk landing page. Kami berkomitmen untuk <strong>tidak akan pernah</strong> menjual, menyewakan, atau membagikan informasi pribadi Anda kepada pihak ketiga mana pun tanpa persetujuan eksplisit dari Anda.
                             </p>
-                            <p>
-                            <strong>Keamanan Data:</strong> Kami mengambil langkah-langkah yang wajar untuk melindungi informasi Anda dari akses yang tidak sah atau pengungkapan yang tidak semestinya. Namun, perlu diketahui bahwa tidak ada transmisi data melalui internet yang 100% aman.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">Keamanan Data</p>
+                            <p class="mb-4">
+                                Kami mengambil langkah-langkah yang wajar untuk melindungi informasi Anda dari akses yang tidak sah atau pengungkapan yang tidak semestinya. Namun, perlu diketahui bahwa tidak ada transmisi data melalui internet yang 100% aman.
                             </p>
-                            <p>
-                            Jika Anda memiliki pertanyaan lebih lanjut mengenai kebijakan privasi kami, jangan ragu untuk menghubungi kami.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">Perubahan Kebijakan</p>
+                            <p class="mb-4">
+                                Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Setiap perubahan akan kami publikasikan di halaman ini dengan tanggal pembaruan yang diperbarui.
                             </p>
+                            
+                            <p class="mb-4">
+                                Jika Anda memiliki pertanyaan lebih lanjut mengenai kebijakan privasi kami atau ingin menghubungi kami terkait layanan jasa landing page terjangkau, jangan ragu untuk menghubungi kami melalui email di hello@gesitweb.com atau WhatsApp di +62 812 3456 7890.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -721,30 +774,50 @@
                 </div>
                 <div class="mt-2 max-h-96 overflow-y-auto pr-2">
                     <div class="text-gray-600 text-sm leading-relaxed">
-                        <p>
-                            Dengan menggunakan layanan dari GesitWeb, Anda ("Klien") setuju untuk mematuhi Syarat dan Ketentuan ("Ketentuan") yang tercantum di bawah ini. Ketentuan ini dibuat untuk memastikan proses kerja yang jelas, adil, dan profesional bagi kedua belah pihak.
+                        <div class="text-gray-600 text-sm leading-relaxed">
+                            <p class="mb-4">
+                                Dengan menggunakan layanan dari GesitWeb, Anda ("Klien") setuju untuk mematuhi Syarat dan Ketentuan ("Ketentuan") yang tercantum di bawah ini. Ketentuan ini dibuat untuk memastikan proses kerja yang jelas, adil, dan profesional bagi kedua belah pihak dalam layanan jasa landing page terjangkau kami.
                             </p>
-                            <p>
-                            <strong>1. Lingkup Layanan:</strong> Layanan standar kami mencakup pembuatan satu halaman landing page statis, desain yang responsif di perangkat mobile dan desktop, optimasi SEO dasar, dan dua kali kesempatan revisi minor. Layanan tidak termasuk biaya pembelian domain custom, fitur kompleks seperti database, sistem login, atau e-commerce.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">1. Lingkup Layanan</p>
+                            <p class="mb-4">
+                                Layanan standar kami mencakup pembuatan satu halaman landing page statis, desain yang responsif di perangkat mobile dan desktop, optimasi SEO dasar, dan dua kali kesempatan revisi minor. Layanan tidak termasuk biaya pembelian domain custom, fitur kompleks seperti database, sistem login, atau e-commerce.
                             </p>
-                            <p>
-                            <strong>2. Kewajiban Klien:</strong> Klien bertanggung jawab untuk menyediakan semua materi yang diperlukan untuk proyek, termasuk namun tidak terbatas pada: teks (copywriting), logo, gambar produk, dan informasi kontak. Keterlambatan dalam penyediaan materi oleh Klien dapat mempengaruhi jadwal penyelesaian proyek.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">2. Kewajiban Klien</p>
+                            <p class="mb-4">
+                                Klien bertanggung jawab untuk menyediakan semua materi yang diperlukan untuk proyek landing page, termasuk namun tidak terbatas pada: teks (copywriting), logo, gambar produk, dan informasi kontak. Keterlambatan dalam penyediaan materi oleh Klien dapat mempengaruhi jadwal penyelesaian proyek.
                             </p>
-                            <p>
-                            <strong>3. Pembayaran:</strong> Proses pengerjaan proyek akan dimulai setelah pembayaran Uang Muka (DP) sebesar 50% dari total biaya diterima. Uang Muka (DP) bersifat tidak dapat dikembalikan (non-refundable). Sisa pembayaran sebesar 50% harus dilunasi setelah Klien menyetujui hasil akhir dan **sebelum** website diluncurkan secara publik atau file diserahterimakan.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">3. Pembayaran</p>
+                            <p class="mb-4">
+                                Proses pengerjaan proyek akan dimulai setelah pembayaran Uang Muka (DP) sebesar 50% dari total biaya diterima. Uang Muka (DP) bersifat tidak dapat dikembalikan (non-refundable). Sisa pembayaran sebesar 50% harus dilunasi setelah Klien menyetujui hasil akhir dan <strong>sebelum</strong> website diluncurkan secara publik atau file diserahterimakan.
                             </p>
-                            <p>
-                            <strong>4. Proses Revisi:</strong> Klien berhak atas dua kali revisi minor. Revisi minor mencakup perubahan pada teks, warna, atau penggantian gambar. Revisi yang bersifat mayor, seperti perubahan total tata letak (layout) atau penambahan seksi di luar kesepakatan awal, akan dikenakan biaya tambahan.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">4. Proses Revisi</p>
+                            <p class="mb-4">
+                                Klien berhak atas dua kali revisi minor. Revisi minor mencakup perubahan pada teks, warna, atau penggantian gambar. Revisi yang bersifat mayor, seperti perubahan total tata letak (layout) atau penambahan seksi di luar kesepakatan awal, akan dikenakan biaya tambahan untuk jasa landing page profesional ini.
                             </p>
-                            <p>
-                            <strong>5. Hak Cipta & Portofolio:</strong> Setelah pembayaran lunas, hak cipta penuh atas desain dan kode website menjadi milik Klien. Namun, GesitWeb berhak untuk menampilkan hasil pekerjaan tersebut dalam portofolio kami untuk tujuan promosi.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">5. Hak Cipta & Portofolio</p>
+                            <p class="mb-4">
+                                Setelah pembayaran lunas, hak cipta penuh atas desain dan kode website menjadi milik Klien. Namun, GesitWeb berhak untuk menampilkan hasil pekerjaan tersebut dalam portofolio kami untuk tujuan promosi layanan jasa landing page terjangkau.
                             </p>
-                            <p>
-                            <strong>6. Batasan Tanggung Jawab:</strong> Setelah serah terima proyek, GesitWeb tidak bertanggung jawab atas masalah teknis yang timbul akibat kesalahan pengelolaan oleh Klien atau masalah dari pihak ketiga (seperti penyedia hosting/domain), kecuali jika Klien berlangganan paket perawatan (maintenance) bulanan dari kami.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">6. Batasan Tanggung Jawab</p>
+                            <p class="mb-4">
+                                Setelah serah terima proyek, GesitWeb tidak bertanggung jawab atas masalah teknis yang timbul akibat kesalahan pengelolaan oleh Klien atau masalah dari pihak ketiga (seperti penyedia hosting/domain), kecuali jika Klien berlangganan paket perawatan (maintenance) bulanan dari kami.
                             </p>
-                            <p>
-                            Dengan melakukan pembayaran DP, Klien dianggap telah membaca, memahami, dan menyetujui seluruh Syarat & Ketentuan ini.
+                            
+                            <p class="mb-3 font-semibold text-gray-900">7. Perubahan Syarat & Ketentuan</p>
+                            <p class="mb-4">
+                                Kami berhak untuk memperbarui Syarat & Ketentuan ini dari waktu ke waktu. Setiap perubahan akan berlaku segera setelah dipublikasikan di website kami.
                             </p>
+                            
+                            <p class="mb-4">
+                                Dengan melakukan pembayaran DP, Klien dianggap telah membaca, memahami, dan menyetujui seluruh Syarat & Ketentuan ini. Untuk pertanyaan tentang syarat & ketentuan layanan jasa landing page kami, silakan hubungi hello@gesitweb.com.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1044,5 +1117,38 @@
         }
     });
 </script>
+
+<!-- Schema Markup (Structured Data) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GesitWeb",
+  "url": "https://gesitweb.com",
+  "logo": "https://gesitweb.com/logo.png",
+  "description": "Layanan landing page profesional untuk UMKM & freelancer Indonesia",
+  "sameAs": [
+    "https://instagram.com/gesitweb",
+    "https://linkedin.com/company/gesitweb"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Landing Page Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "GesitWeb"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Indonesia"
+  }
+}
+</script>
+
 </body>
 </html>

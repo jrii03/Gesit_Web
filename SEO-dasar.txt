@@ -1,0 +1,171 @@
+SEO Dasar untuk GesitWeb
+
+1. Meta Tags yang Harus Ditambahkan
+Tambahkan meta tags ini di dalam <head> section:
+
+<!-- Meta Tags Dasar -->
+<meta name="description" content="Layanan landing page profesional untuk UMKM & freelancer Indonesia. Website online dalam 48 jam, harga terjangkau mulai Rp 500.000.">
+<meta name="keywords" content="landing page, website UMKM, jasa website, landing page murah, UMKM Indonesia, freelancer website">
+<meta name="author" content="GesitWeb">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (Social Media) -->
+<meta property="og:title" content="GesitWeb - Landing Page Profesional untuk UMKM & Freelancer">
+<meta property="og:description" content="Website online dalam 48 jam dengan harga terjangkau. Solusi landing page profesional untuk bisnis Anda.">
+<meta property="og:image" content="https://gesitweb.com/images/og-image.jpg">
+<meta property="og:url" content="https://gesitweb.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GesitWeb">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GesitWeb - Landing Page Profesional">
+<meta name="twitter:description" content="Website online dalam 48 jam dengan harga terjangkau untuk UMKM Indonesia.">
+<meta name="twitter:image" content="https://gesitweb.com/images/twitter-image.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://gesitweb.com">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+-------------------------------------------------------------------------------------------------------
+
+2. Struktur Heading yang Benar
+Pastikan hierarki heading seperti ini:
+
+<h1>Website Profesional, Jadi dalam 48 Jam.</h1> <!-- Hanya 1 di halaman -->
+<h2>Kenapa Pilih GesitWeb?</h2> <!-- Section headings -->
+<h3>Proses Gesit</h3> <!-- Subsection headings -->
+<h4>Informasi tambahan</h4> <!-- Konten detail -->
+
+------------------------------------------------------------------------------------------------------
+
+3. Optimasi Gambar:
+
+<!-- Sebelum -->
+<img src="Untitled design (2).jpg" alt="">
+
+<!-- Sesudah -->
+<img src="kopisenja-landingpage.webp" 
+     alt="Landing page Kopi Senja - Menu digital dan sistem pemesanan" 
+     width="640" 
+     height="360"
+     loading="lazy"
+     fetchpriority="high"> <!-- Untuk hero image -->
+
+------------------------------------------------------------------------------------------------------
+
+4. Internal Linking
+Tambahkan navigasi yang jelas:
+
+<nav>
+    <a href="#proses">Proses Kerja</a>
+    <a href="#portofolio">Portofolio</a>
+    <a href="#harga">Harga</a>
+    <a href="#faq">FAQ</a>
+</nav>
+
+-------------------------------------------------------------------------------------------------------
+
+5. Schema Markup (Structured Data)
+Tambahkan di <head> atau sebelum </body>:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GesitWeb",
+  "url": "https://gesitweb.com",
+  "logo": "https://gesitweb.com/logo.png",
+  "description": "Layanan landing page profesional untuk UMKM & freelancer Indonesia",
+  "sameAs": [
+    "https://instagram.com/gesitweb",
+    "https://linkedin.com/company/gesitweb"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Landing Page Development",
+  "provider": {
+    "@type": "Organization",
+    "name": "GesitWeb"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Indonesia"
+  }
+}
+</script>
+
+---------------------------------------------------------------------------------------------------------
+
+6. Optimasi Kecepatan:
+
+<!-- Preconnect untuk font dan CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+<!-- Preload untuk resource penting -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+--------------------------------------------------------------------------------------------------------
+
+7. Sitemap XML
+Buat file sitemap.xml:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://gesitweb.com/</loc>
+      <lastmod>2025-01-15</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+</urlset>
+
+-------------------------------------------------------------------------------------------------------
+
+8. robots.txt
+Buat file robots.txt:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gesitweb.com/sitemap.xml
+
+# CSS, JS, Images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+
+-------------------------------------------------------------------------------------------------------
+
+9. Mobile Optimization
+Pastikan:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+-------------------------------------------------------------------------------------------------------
+
+10. Analytics dan Tracking:
+
+<!-- Google Analytics (gtag) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>

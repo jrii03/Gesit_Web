@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gesitweb.com/sitemap.xml
+
+# CSS, JS, Images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
